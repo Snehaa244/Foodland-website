@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodland </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+         <div class="nav-logo border">
+    <div class="logo"></div>
+</div>
+   
+   <div class="nav-search">
+    <select class="search-select">
+        <option>All</option>
+    </select>
+    <input placeholder="Search Items" class="search-input">
+    <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+ </div>
+<div class="nav-signin border">
+    <p><span>Hello</span></p>
+    <p class="nav-second">Make list of your favourite Namkeen</p>
+   
+</div>
+<div class="nav-return border">
+    
+    <p class="nav-second">& Orders</p>
+
+</div>
+<div class="nav-cart border" id="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart <span id="cart-count">0</span>
+    
+</div>
+        </div>
+<div class="panel">
+    <div class="panelall">
+        <i class="fa-solid fa-bars"></i>
+        All
+    </div>
+    <div class="panel-ops">
+        <p>Home</p>
+        <p>About US</p>
+        <p>Combo Pack</p>
+        <p>Festive Special</p>
+        <p>Food License</p>
+        
+    </div>
+    <div class="panel-deals">
+        List Out Your Favourite Namkeen Product
+    </div>
+
+</div>
+    </header>  
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p><h1>The Taste Of Malwa....<h1></p>
+        </div>
+    </div> 
+   
+    
+    <div class="NamkeenProducts">
+        <div class="box">
+           <div class="box-content" id="product1">
+            <h2>Laung Sev</h2>
+            <div class="box-img" style="background-image: url('laung sev.jpg');"></div>
+            
+              <button class="add-to-cart" data-product-id="laung-sev" data-product-name="Laung Sev" data-product-image="laung sev.jpg">Add to Cart</button>
+           </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content" id="product2">
+            <h2>Ujjaini sev</h2>
+            <div class="box-img" style="background-image: url('ujjaini sev.jpg');"></div>
+             <button class="add-to-cart" data-product-id="ujjaini-sev" data-product-name="Ujjaini Sev" data-product-image="ujjaini sev.jpg">Add to Cart</button>
+             
+        </div>
+        </div>
+        <div class="box">
+            <div class="box-content" id="product3">
+            <h2>Kashmiri Sev</h2>
+            <div class="box-img" style="background-image: url('kashmiri sev (2).jpg');"></div>
+             <button class="add-to-cart" data-product-id="kashmiri-sev">Add to Cart</button>
+        </div>
+    </div>
+        <div class="box">
+            <div class="box-content" id="product4">
+            <h2>Ratlami Sev</h2>
+            <div class="box-img" style="background-image: url('Ratlami Sev (2).jpg');"></div>
+            <button class="add-to-cart" data-product-id="ratlami-sev">Add to Cart</button>
+        </div>
+    </div>
+        <div class="box">
+            <div class="box-content" id="product5">
+             <h2>Lasuniya Sev</h2>
+             <div class="box-img" style="background-image: url('lasuniya sev (2).jpg');"></div>
+             <button class="add-to-cart" data-product-id="Lasuniya-sev">Add to Cart</button>
+            </div>
+        </div>
+         
+         <div class="box">
+            <div class="box-content" id="product6">
+             <h2>Podina Sev</h2>
+             <div class="box-img" style="background-image: url('Podina Sev.jpg');"></div>
+             <button class="add-to-cart" data-product-id="Podina-sev">Add to Cart</button>
+         </div>
+        </div>
+         <div class="box">
+            <div class="box-content" id="product7">
+             <h2>Tamatar Sev</h2>
+             <div class="box-img" style="background-image: url('tamatar sev (2).jpg');"></div>
+             <button class="add-to-cart" data-product-id="Tamatar-sev">Add to Cart</button>
+         </div>
+        </div>
+         <div class="box">
+            <div class="box-content" id="product8">
+             <h2>Navratan Mixture</h2>
+             <div class="box-img" style="background-image: url('navratan mixture (2).jpg');"></div>
+             <button class="add-to-cart" data-product-id="Navratan-Mixture">Add to Cart</button>
+            </div>
+    </div>
+     
+        <div class="box">
+           <div class="box-content" id="product9">
+            <h2>Make ka mixture</h2>
+            <div class="box-img" style="background-image: url('make ka mixture (2).jpg');"></div>
+           <button class="add-to-cart" data-product-id="Make ka mixture">Add to Cart</button>
+           </div>
+        </div>
+      
+        <div class="box">
+           <div class="box-content" id="product10">
+            <h2>KhataMitha Mixture</h2>
+            <div class="box-img" style="background-image: url('khatamitha mixture.jpg');"></div>
+            <button class="add-to-cart" data-product-id="khatamitha mixture">Add to Cart</button>
+           </div>
+        </div>
+    
+        <div class="box">
+           <div class="box-content" id="product12">
+            <h2>Sabudana Faryali</h2>
+            <div class="box-img" style="background-image: url('sabudana faryali.jpg');"></div>
+            <button class="add-to-cart" data-product-id="sabudana faryali">Add to Cart</button>
+           </div>
+        </div>
+        <div class="box">
+           <div class="box-content" id="product13">
+            <h2>Aloo Faryali</h2>
+            <div class="box-img" style="background-image: url('aloo faryali (2).jpg');"></div>
+            <button class="add-to-cart" data-product-id="aloo faryali">Add to Cart</button>
+           </div>
+        </div>
+         </div>
+    <br><br>
+   <footer>
+        <div class="foot-panel1">
+         <p>Back to Top </p> 
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Adress</p>
+                <a>1/C - Rajendra Nagar Indore,MP,452012</a>
+                <a>Since 2000</a>
+            </ul>
+            <ul>
+                <p>Contact details</p>
+                <a>Owner-91-7869403444</a>
+                <a>Owner Name-Vinesh Parmar</a>
+                
+            </ul>
+            <ul>
+                <p>Foodland Policy</p>
+                <a>Cancellation</a>
+                <a>Refund</a>
+                <a>Privacy</a>
+                <a>Shipping Policy</a>
+               
+            </ul>
+            <ul>
+                <p>Timings</p>
+                <a>Open on TUESDAY-SUNDAY</a>
+                <a>MONDAY-OFF</a>
+                <a>9:00am - 9:00pm</a>
+                <a>Hours may differ in festive season</a>
+                
+                <a>Help </a>
+            
+            </ul>
+     
+          
+        </div>
+    
+   
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Condition Of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy Choices</a>
+            <BR>
+            <a> © 1996-2023, Foodland.com, Inc. or its affiliates</a>
+
+            
+        </div>
+         </div>
+       
+   
+         
+   </footer>
+   
+<script>
+  
+  const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+  
+  if (isLoggedIn === 'true') {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', addToCart);
+    });
+  } else {
+    
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', showLoginPrompt);
+    });
+  }
+
+  function addToCart(event) {
+    
+  }
+
+  function showLoginPrompt() {
+    alert('Please register yourself to add items to your cart.');
+    
+   window.location.href = 'register.html';
+  }
+</script>
+
+
+</body>
+</html>
+    
